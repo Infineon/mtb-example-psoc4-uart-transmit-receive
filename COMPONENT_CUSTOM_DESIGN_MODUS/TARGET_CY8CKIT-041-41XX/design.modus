@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Design version="12" device_library_hint_path="../../../mtb_shared/mtb-pdl-cat2/latest-v1.X/devicesupport.xml" xmlns="http://cypress.com/xsd/cydesignfile_v3">
-    <ToolInfo version="2.2.0.2801"/>
+    <ToolInfo version="2.3.2.4685"/>
     <Devices>
         <Device mpn="CY8C4146AZI-S433">
             <BlockConfig>
@@ -11,105 +11,23 @@
                 </Block>
                 <Block location="csd[0].csd[0]">
                     <Alias value="CYBSP_CSD"/>
-                    <Personality template="m0s8csd" version="1.0">
-                        <Param id="CapSenseEnable" value="true"/>
-                        <Param id="CapSenseCore" value="0"/>
-                        <Param id="SensorCount" value="22"/>
-                        <Param id="CapacitorCount" value="3"/>
-                        <Param id="SensorName0" value="Cmod"/>
-                        <Param id="SensorName1" value="CintA"/>
-                        <Param id="SensorName2" value="CintB"/>
-                        <Param id="SensorName3" value="Button0_Rx0"/>
-                        <Param id="SensorName4" value="Button0_Tx"/>
-                        <Param id="SensorName5" value="Button1_Rx0"/>
-                        <Param id="SensorName6" value="Button1_Tx"/>
-                        <Param id="SensorName7" value="Touchpad0_Col0"/>
-                        <Param id="SensorName8" value="Touchpad0_Col1"/>
-                        <Param id="SensorName9" value="Touchpad0_Col2"/>
-                        <Param id="SensorName10" value="Touchpad0_Col3"/>
-                        <Param id="SensorName11" value="Touchpad0_Col4"/>
-                        <Param id="SensorName12" value="Touchpad0_Col5"/>
-                        <Param id="SensorName13" value="Touchpad0_Col6"/>
-                        <Param id="SensorName14" value="Touchpad0_Row0"/>
-                        <Param id="SensorName15" value="Touchpad0_Row1"/>
-                        <Param id="SensorName16" value="Touchpad0_Row2"/>
-                        <Param id="SensorName17" value="Touchpad0_Row3"/>
-                        <Param id="SensorName18" value="Touchpad0_Row4"/>
-                        <Param id="SensorName19" value="Touchpad0_Row5"/>
-                        <Param id="SensorName20" value="Touchpad0_Row6"/>
-                        <Param id="SensorName21" value="Proximity0_Sns0"/>
-                        <Param id="CapSenseConfigurator" value="0"/>
-                        <Param id="CapSenseTuner" value="0"/>
-                        <Param id="CsdAdcEnable" value="false"/>
-                        <Param id="numChannels" value="1"/>
-                        <Param id="resolution" value="CY_CSDADC_RESOLUTION_10BIT"/>
-                        <Param id="range" value="CY_CSDADC_RANGE_VDDA"/>
-                        <Param id="acqTime" value="10"/>
-                        <Param id="autoCalibrInterval" value="30"/>
-                        <Param id="vref" value="-1"/>
-                        <Param id="operClkDivider" value="1"/>
-                        <Param id="azTime" value="5"/>
-                        <Param id="csdInitTime" value="25"/>
-                        <Param id="inFlash" value="true"/>
-                        <Param id="CsdIdacEnable" value="false"/>
-                        <Param id="CsdIdacAselect" value="CY_CSDIDAC_GPIO"/>
-                        <Param id="CsdIdacBselect" value="CY_CSDIDAC_DISABLED"/>
-                        <Param id="csdIdacInitTime" value="25"/>
-                        <Param id="idacInFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[0].pin[0]">
                     <Alias value="CYBSP_CSD_ROW0"/>
                     <Alias value="CYBSP_SPI_CS"/>
                     <Alias value="CYBSP_D10"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[0].pin[1]">
                     <Alias value="CYBSP_CSD_BTN1"/>
                     <Alias value="CYBSP_J2_8"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[0].pin[2]">
                     <Alias value="CYBSP_CSD_BTN2"/>
                     <Alias value="CYBSP_D7"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[0].pin[3]">
                     <Alias value="CYBSP_CSD_COL5"/>
                     <Alias value="CYBSP_D8"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[0].pin[4]">
                     <Alias value="CYBSP_DEBUG_UART_RX"/>
@@ -138,15 +56,6 @@
                 <Block location="ioss[0].port[0].pin[6]">
                     <Alias value="CYBSP_CSD_COL6"/>
                     <Alias value="CYBSP_J2_10"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[0].pin[7]">
                     <Alias value="CYBSP_SW2"/>
@@ -158,163 +67,55 @@
                     <Alias value="CYBSP_CSD_ROW2"/>
                     <Alias value="CYBSP_SPI_MOSI"/>
                     <Alias value="CYBSP_D11"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_OD_DRIVESLOW"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[1].pin[1]">
                     <Alias value="CYBSP_CSD_ROW3"/>
                     <Alias value="CYBSP_SPI_MISO"/>
                     <Alias value="CYBSP_D12"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_OD_DRIVESLOW"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[1].pin[2]">
                     <Alias value="CYBSP_CSD_ROW4"/>
                     <Alias value="CYBSP_SPI_CLK"/>
                     <Alias value="CYBSP_D13"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[1].pin[3]">
                     <Alias value="CYBSP_CSD_ROW5"/>
                     <Alias value="CYBSP_D3"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[1].pin[4]">
                     <Alias value="CYBSP_CSD_ROW6"/>
                     <Alias value="CYBSP_D2"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[1].pin[5]">
                     <Alias value="CYBSP_CSD_ROW1"/>
                     <Alias value="CYBSP_D4"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[1].pin[6]">
                     <Alias value="CYBSP_CSD_PROX"/>
                     <Alias value="CYBSP_J2_2"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[1].pin[7]">
                     <Alias value="CYBSP_CSD_COL0"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[2].pin[0]">
                     <Alias value="CYBSP_CSD_COL1"/>
                     <Alias value="CYBSP_A0"/>
                     <Alias value="CYBSP_J2_1"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[2].pin[1]">
                     <Alias value="CYBSP_CSD_COL2"/>
                     <Alias value="CYBSP_A1"/>
                     <Alias value="CYBSP_J2_3"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[2].pin[2]">
                     <Alias value="CYBSP_CSD_COL3"/>
                     <Alias value="CYBSP_A2"/>
                     <Alias value="CYBSP_J2_5"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[2].pin[3]">
                     <Alias value="CYBSP_CSD_COL4"/>
                     <Alias value="CYBSP_A3"/>
                     <Alias value="CYBSP_J2_7"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[2].pin[4]">
                     <Alias value="CYBSP_POTENTIOMETER_INPUT"/>
@@ -336,26 +137,10 @@
                 <Block location="ioss[0].port[3].pin[0]">
                     <Alias value="CYBSP_I2C_SCL"/>
                     <Alias value="CYBSP_D15"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_HIGHZ"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[3].pin[1]">
                     <Alias value="CYBSP_I2C_SDA"/>
                     <Alias value="CYBSP_D14"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_STRONG_IN_OFF"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[3].pin[2]">
                     <Alias value="CYBSP_SWDIO"/>
@@ -412,54 +197,18 @@
                 <Block location="ioss[0].port[3].pin[7]">
                     <Alias value="CYBSP_CSD_BTN_TX"/>
                     <Alias value="CYBSP_D6"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[4].pin[0]">
                     <Alias value="CYBSP_J2_4"/>
                 </Block>
                 <Block location="ioss[0].port[4].pin[1]">
                     <Alias value="CYBSP_CMOD"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[4].pin[2]">
                     <Alias value="CYBSP_CINTA"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="ioss[0].port[4].pin[3]">
                     <Alias value="CYBSP_CINTB"/>
-                    <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="sioOutputBuffer" value="true"/>
-                        <Param id="inFlash" value="true"/>
-                    </Personality>
                 </Block>
                 <Block location="peri[0].div_16[0]">
                     <Alias value="CYBSP_CSD_CLK_DIV"/>
@@ -555,10 +304,6 @@
                     <Port name="ioss[0].port[3].pin[2].digital_inout[0]"/>
                 </Net>
                 <Net>
-                    <Port name="csd[0].csd[0].clock[0]"/>
-                    <Port name="peri[0].div_16[0].clk[0]"/>
-                </Net>
-                <Net>
                     <Port name="ioss[0].port[0].pin[4].digital_inout[0]"/>
                     <Port name="scb[1].uart_rx[0]"/>
                 </Net>
@@ -570,74 +315,6 @@
                     <Port name="peri[0].div_16[1].clk[0]"/>
                     <Port name="scb[1].clock[0]"/>
                 </Net>
-                <Mux name="sense" location="csd[0].csd[0]">
-                    <Arm>
-                        <Port name="ioss[0].port[4].pin[1].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[4].pin[2].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[4].pin[3].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[0].pin[1].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[3].pin[7].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[0].pin[2].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[3].pin[7].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[0].pin[6].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[0].pin[3].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[2].pin[3].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[2].pin[2].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[2].pin[1].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[2].pin[0].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[1].pin[7].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[1].pin[4].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[1].pin[3].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[1].pin[2].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[1].pin[1].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[1].pin[0].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[1].pin[5].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[0].pin[0].analog[0]"/>
-                    </Arm>
-                    <Arm>
-                        <Port name="ioss[0].port[1].pin[6].analog[0]"/>
-                    </Arm>
-                </Mux>
             </Netlist>
         </Device>
     </Devices>
