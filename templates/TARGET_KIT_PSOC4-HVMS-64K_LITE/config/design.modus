@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration app="BACKEND" formatVersion="14" lastSavedWith="Configurator Backend" lastSavedWithVersion="3.20.0" toolsPackage="ModusToolbox 3.2.0" xmlns="http://cypress.com/xsd/cydesignfile_v5">
+<Configuration app="BACKEND" formatVersion="14" lastSavedWith="Configurator Backend" lastSavedWithVersion="3.50.0" toolsPackage="ModusToolbox 3.5.0" xmlns="http://cypress.com/xsd/cydesignfile_v5">
     <Devices>
         <Device mpn="CY8C4146LWE-HVS115X">
             <BlockConfig>
@@ -422,10 +422,12 @@
                     <Block location="srss[0].power[0]" locked="true"/>
                     <Parameters>
                         <Param id="AmuxPumpEn" value="false"/>
+                        <Param id="HVBodEn" value="true"/>
+                        <Param id="VccOVDEn" value="false"/>
+                        <Param id="VddOVDEn" value="false"/>
                         <Param id="deepsleepLatency" value="0"/>
                         <Param id="idlePwrMode" value="CY_CFG_PWR_MODE_DEEPSLEEP"/>
                         <Param id="vddaMv" value="5000"/>
-                        <Param id="vdddMv" value="5000"/>
                     </Parameters>
                 </Personality>
             </BlockConfig>
